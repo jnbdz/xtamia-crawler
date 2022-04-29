@@ -1,4 +1,4 @@
-FROM node:current
+FROM node:17
 MAINTAINER Jean-Nicolas Boulay
 
 WORKDIR /usr/src/app
@@ -11,4 +11,4 @@ RUN apt-get update && \
 
 RUN pip3 install pyinstaller
 
-RUN npm install live-server -g
+RUN npm install live-server @vue/cli -g
