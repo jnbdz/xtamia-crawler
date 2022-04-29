@@ -1,0 +1,36 @@
+{
+  "name": "xtamia-crawler",
+  "version": "0.0.1",
+  "description": "An open-source web crawler build on Electron for Windows, Mac OS X, and Linux.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnbdz/xtamia-crawler.git"
+  },
+  "keywords": [
+    "web-crawler",
+    "crawler",
+    "download-websites",
+    "web-scraping",
+    "web-harvesting",
+    "web-data-extraction",
+    "youtube-dl",
+    "download-video",
+    "desktop"
+  ],
+  "author": "Jean-Nicolas Boulay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jnbdz/xtamia-crawler/issues"
+  },
+  "homepage": "https://github.com/jnbdz/xtamia-crawler#readme",
+  "devDependencies": {
+    "electron": "^18.2.0"
+  }
+}
