@@ -1,7 +1,20 @@
 {
   "name": "xtamia-crawler",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
+  "keywords": [
+    "web-crawler",
+    "crawler",
+    "download-websites",
+    "web-scraping",
+    "web-harvesting",
+    "web-data-extraction",
+    "youtube-dl",
+    "download-video",
+    "desktop"
+  ],
+  "author": "Jean-Nicolas Boulay",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
