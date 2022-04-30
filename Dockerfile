@@ -1,4 +1,4 @@
-FROM node:17
+FROM node:16
 MAINTAINER Jean-Nicolas Boulay
 
 WORKDIR /usr/src/app
