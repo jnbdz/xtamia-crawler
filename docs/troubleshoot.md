@@ -60,4 +60,7 @@ module.exports = {
 };
 ```
 
-**Source:** https://css-tricks.com/how-to-import-a-sass-file-into-every-vue-component-in-an-app/
+**Sources:** 
+- https://css-tricks.com/how-to-import-a-sass-file-into-every-vue-component-in-an-app/
+- https://vue-loader.vuejs.org/guide/pre-processors.html
+- https://cli.vuejs.org/guide/css.html#passing-options-to-pre-processor-loaders
