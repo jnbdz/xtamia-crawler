@@ -19,14 +19,41 @@ There are other solutions in the source.
 ## SASS, CSS, Styles
 ### Import a Sass File into Every Vue Component in an App
 
-In the `vue.config.js` I added: 
+In the `vue.config.js` I added (for sass-loader): 
 
+For version 7 or less: 
 ```javascript
 module.exports = {
   css: {
     loaderOptions: {
       sass: {
         data: `@import "@/styles/_variables.scss";`
+      }
+    }
+  }
+};
+```
+
+Version 8: 
+```javascript
+module.exports = {
+  css: {
+    loaderOptions: {
+      sass: {
+        prependData: `@import "@/styles/_variables.scss";`
+      }
+    }
+  }
+};
+```
+
+Version 9: 
+```javascript
+module.exports = {
+  css: {
+    loaderOptions: {
+      sass: {
+        additionalData: `@import "@/styles/_variables.scss";`
       }
     }
   }

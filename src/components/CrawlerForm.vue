@@ -41,10 +41,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "~foundation-sites/scss/foundation.scss";
-@include foundation-everything;
-@import "@/styles/_variables.scss";
-
 .h1 {
     color: $primary;
 }

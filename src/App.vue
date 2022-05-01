@@ -14,8 +14,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~foundation-sites/scss/foundation";
-
 html, body {
   margin: 0;
 }
