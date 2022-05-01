@@ -64,3 +64,17 @@ module.exports = {
 - https://css-tricks.com/how-to-import-a-sass-file-into-every-vue-component-in-an-app/
 - https://vue-loader.vuejs.org/guide/pre-processors.html
 - https://cli.vuejs.org/guide/css.html#passing-options-to-pre-processor-loaders
+
+## Binary issues
+
+### List all the dependencies (Human readable)
+```bash
+ldd ffmpeg | awk '{ print $1 }' | awk -F "." '{ print $1 }'
+```
+
+### List the `so` on your system
+```bash
+ldconfig -p
+```
+or
+Look in `/usr/lib` and `/usr/lib64`.
