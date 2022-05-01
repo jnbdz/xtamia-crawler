@@ -1,0 +1,4 @@
+dist
+Dockerfile
+builddockerfile.sh
+buildproject.sh
