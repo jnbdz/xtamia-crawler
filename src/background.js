@@ -1,9 +1,58 @@
 'use strict'
 
+//import getPort from 'get-port';
 import { app, protocol, BrowserWindow } from 'electron'
 import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
 import installExtension, { VUEJS3_DEVTOOLS } from 'electron-devtools-installer'
 const isDevelopment = process.env.NODE_ENV !== 'production'
+
+import pie from "puppeteer-in-electron";
+import puppeteer from "puppeteer-core";
+
+const mainP = async () => {
+  console.log("Load mainP");
+  await pie.initialize(app);
+  const browser = await pie.connect(app, puppeteer);
+
+  const window = new BrowserWindow();
+  const url = "https://example.com/";
+  await window.loadURL(url);
+
+  const page = await pie.getPage(browser, window);
+  console.log(page.url());
+  window.destroy();
+};
+
+mainP();
+
+/**
+ * Initialize puppeteer
+ */
+
+/*if (app.isReady()) {
+  console.log("isReady");
+} else {
+  console.log("Not ready");
+}
+
+console.log("protocol:");
+console.log(protocol);
+
+console.log('app.commandLine.getSwitchValue("remote-debugging-port")')
+console.log(app.commandLine.getSwitchValue("remote-debugging-port"));*/
+
+// Need to put this in a async function
+/*console.log("getPort")
+console.log(await getPort({host: "127.0.0.1"}))*/
+
+//console.log("app.getPort()")
+//console.log(app.getPort())
+
+//console.log(app.commandLine);
+
+/*console.log(app.getVersion())
+console.log(parseInt(app.getVersion().split(".")[0], 10));*/
+
 
 // Scheme must be registered before the app is ready
 protocol.registerSchemesAsPrivileged([
