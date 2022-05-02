@@ -26,10 +26,18 @@
   },
   "main": "background.js",
   "dependencies": {
+    "@types/puppeteer-core": "^5.4.0",
+    "adm-zip": "^0.5.9",
     "axios": "^0.27.2",
+    "bottleneck": "^2.19.5",
     "core-js": "^3.8.3",
+    "dotenv": "^16.0.0",
+    "electron-updater": "^5.0.1",
+    "execa": "^6.1.0",
     "foundation-sites": "^6.7.4",
+    "iso-639-2": "^3.0.1",
     "jquery": "^3.6.0",
+    "mkdirp": "^1.0.4",
     "motion-ui": "^2.0.3",
     "vue": "^3.2.13",
     "what-input": "^5.2.11"
