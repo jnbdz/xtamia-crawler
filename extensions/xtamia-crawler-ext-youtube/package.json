@@ -1,0 +1,6 @@
+{
+    "version": "0.0.1",
+    "name": "xtamia-crawler-ext-youtube",
+    "main": "dist/js/main.js",
+    "renderer": "dist/js/renderer.js"
+}
